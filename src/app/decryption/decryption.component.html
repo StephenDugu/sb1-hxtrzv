@@ -1,0 +1,7 @@
+<ActionBar title="解密"></ActionBar>
+
+<StackLayout class="p-4">
+  <TextField [(ngModel)]="inputText" hint="输入要解密的文本" class="mb-4 p-2 border rounded-lg"></TextField>
+  <Button text="解密" (tap)="decrypt()" class="mb-4 bg-green-500 text-white p-2 rounded-lg"></Button>
+  <Label [text]="'解密结果: ' + decryptedText" textWrap="true" class="text-lg"></Label>
+</StackLayout>
